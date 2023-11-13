@@ -112,3 +112,13 @@ alert(`According to your bill and tip percentage, you must tip ${(finalTipTotal)
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
+const applyDiscount = (priceBefore, discountPercentage) => {
+    discountPercentage = Number(discountPercentage / 100).toLocaleString(undefined)
+    let totalDiscount = priceBefore * discountPercentage
+    let totalAfterDiscount = (priceBefore - totalDiscount).toFixed(2)
+    return totalAfterDiscount
+
+
+
+}
+console.log(applyDiscount(10,15))
