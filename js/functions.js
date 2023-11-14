@@ -88,7 +88,7 @@ console.log(calculateTip(16,11.00).toFixed(2))
  * then display the dollar amount they should tip
  */
 let billTotal = parseFloat(prompt("What is the the bill total?"))
-let tipPercentage = parseFloat(prompt("What is the percentage you wish to "))
+let tipPercentage = parseFloat(prompt("What is the percentage you wish to tip? "))
 tipPercentage = Number(tipPercentage/100).toLocaleString(undefined)
 let finalTipTotal = billTotal * tipPercentage
 
@@ -118,7 +118,5 @@ const applyDiscount = (priceBefore, discountPercentage) => {
     let totalAfterDiscount = (priceBefore - totalDiscount).toFixed(2)
     return totalAfterDiscount
 
-
-
 }
-console.log(applyDiscount(10,15))
+console.log(applyDiscount(10,1))
