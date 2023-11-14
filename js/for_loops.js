@@ -15,9 +15,17 @@
 //     console.log(`Random Number ${i + 1}: ${randomNumber}, the number is ${result}`);
 // }
 
-for(let i = 1; i < 10; i++ ) {
 
-}
+// for (let i = 1; i <= 9; i++) {
+//     let line = '';
+//     for (let j = 1; j <= i; j++) {
+//         line += i;
+//     }
+//     console.log(line);
+// }
 
 
+// for (let i = 100; i >= 5; i -= 5 ) {
+//     console.log(i)
+// }
 

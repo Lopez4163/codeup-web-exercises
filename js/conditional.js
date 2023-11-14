@@ -22,7 +22,7 @@
 //  * console.logging the function's return value
 //  */
 //
-const analyzeColor = (colorName, randomColor) => {
+const analyzeColor = (colorName) => {
     if(colorName === 'blue'){
         return `${colorName} is the color of the sky`
     }
@@ -72,8 +72,8 @@ switch(randomColor) {
 //  * user to your `analyzeColor` function. Alert the return value from your
 //  * function to show it to the user.
 //  */
-// let userColor = prompt("Give me any color you can think of")
-// alert(analyzeColor(userColor))
+let userColor = prompt("Give me any color you can think of")
+alert(analyzeColor(userColor))
 //
 //
 // /* ########################################################################## */
