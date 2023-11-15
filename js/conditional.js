@@ -55,16 +55,20 @@ const randomColor = colors[Math.floor(Math.random() * colors.length)];
 //  * Comment out the code above, and refactor your function to use a switch-case statement
 //  */
 //
-switch(randomColor) {
-    case 'red':
-        console.log("red is the color if a strawberry")
-        break;
-    case 'orange':
-        console.log('orange is the color of oranges')
-        break;
-    default:
-        console.log("i do not know that color")
-}
+// const analyzeColor = () => {
+//      let returnMessage;
+//     switch (randomColor) {
+//         case 'red':
+//             returnMessage = "red is the color if a strawberry"
+//             break;
+//         case 'orange':
+//             returnMessage = 'orange is the color of oranges'
+//             break;
+//         default:
+//             returnMessage = "i do not know that color"
+//     }
+//     return returnMessage
+// }
 //
 // /**
 //  * TODO:
