@@ -16,12 +16,17 @@
 // }
 
 
-// for (let i = 1; i <= 9; i++) {
-//     let line = '';
-//     for (let j = 1; j <= i; j++) {
-//         line += i;
-//     }
-//     console.log(line);
+for (let i = 1; i <= 9; i++) {
+    let line = '';
+    for (let j = 1; j <= i; j++) {
+        line += i;
+    }
+    console.log(line);
+}
+
+// for(let i = 1; i < 10; i++) {
+//     let newI = toString()
+//     console.log(newI.repeat(i))
 // }
 
 
@@ -29,3 +34,9 @@
 //     console.log(i)
 // }
 
+const downByFive = () => {
+    for (let i = 100; i >= 5; i -= 5 ) {
+    console.log(i)
+}
+}
+downByFive()
