@@ -69,8 +69,6 @@
 
     })
 
-
-
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -86,25 +84,41 @@
 
     let books = [
         {
-            title:'Harry Potter',
-            author:'JK Rowling'
+            title: 'Harry Potter',
+            author: {
+                firstName: 'jk',
+                lastName: 'rowling'
+            },
         },
         {
-            title:'Fingerprints of the God',
-            author:'Stephen Graham'
+            title: 'breathe',
+            author: {
+                firstName: 'royce',
+                lastName: 'gracie'
+            },
         },
         {
-            title:'Breathe',
-            author:'Royce Gracie'
+            title: 'fignerprints',
+            author: {
+                firstName: 'stephen',
+                lastName: 'graham'
+            },
         },
         {
-            title:'spongebob the sponge',
-            author:'SBSP'
+            title: 'flat stanley',
+            author: {
+                firstName: 'no',
+                lastName: 'idea'
+            },
         },
         {
-            title:'1942',
-            author:'some random guy'
+            title: 'goosebumops',
+            author: {
+                firstName: 'rl',
+                lastName: 'stine'
+            },
         }
+
     ]
     console.log(books[1].title)
     /**
@@ -131,11 +145,13 @@
      *      ---
      *      ...
      */
-// books.forEach((book) => {
-//     console.log(`Title: ${book.title}\nAuthor: ${book.author}\n--- `)
-//
-// })
-//
+books.forEach((book, index) => {
+    console.log(`Title: ${book.title}\nAuthor: ${book.author}\n--- `)
+
+})
+
+
+
 
 
 
