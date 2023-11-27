@@ -7,17 +7,21 @@
 <body>
 <script>// todo:
 // Create an array of months for printing dates
-let months = [];
+let months = ['january','february','march','april','may','june','july','august','september','october', 'november', 'december' ];
 
 // todo:
 // Create the date corresponding to your birthday using the JavaScript Date object.
 //let jsBirthday
 
-let jsBirthday = new Date(1996, 4, 4)
+// let jsBirthday = new Date(96, 3, 4)
+let jsBirthday = new Date("Apr 04, 1996")
+jsBirthday.setHours(0,0,0,0)
 // todo:
 // Log your birthday in the format: January 1, 2014 using the JavaScript Date object.
 // See link below for methods needed:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Getter
-console.log(`Here is my birthday using JavaScript: ${jsBirthday} `);</script>
+console.log(`Here is my birthday using JavaScript: ${jsBirthday.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`);
+
+</script>
 </body>
 </html>
