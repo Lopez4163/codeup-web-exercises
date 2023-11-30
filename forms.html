@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With US </title>
+  <style>
+
+    .title {
+      text-align: center;
+      color: white;
+    }
+    label {
+      color: white;
+    }
+    form {
+      text-align: center;
+    }
+    #bio{
+      text-align: center;
+      font-size: larger;
+    }
+    h2 {
+        color: white;
+    }
+    button {
+      color: white;
+    }
+
+
+
+  </style>
+</head>
+<body style="background-color: black">
+<header>
+    <h1 class="title">Register With Us</h1>
+</header>
+  <form class="login-form" method="post" action="https://request-inspector.glitch.me/">
+      <label for="email">Email:</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="Enter Email"/>
+      <br>
+      <br>
+      <label for="password">Password:</label>
+      <br>
+      <input type="password" id="password" name="password" placeholder="Enter Password"/>
+      <br>
+      <br>
+  <br><br>
+  <hr>
+
+  <label for="bio" >
+    <h1>Tell Us About Yourself</h1>
+  </label>
+  <textarea id="bio" name="text" rows="6" cols="50" placeholder="Tell us about yourself" >
+  </textarea>
+  <br>
+  <br>
+
+<br>
+<hr>
+<br>
+
+  <h2>How Did You Hear About Us</h2>
+  <label>Bill Board</label>
+  <input type="radio" name="hear-us" value="Billboard">
+  <label>Radio</label>
+  <input type="radio" name="hear-us" value="Radio">
+  <label>Advertisement</label>
+  <input type="radio" name="hear-us" value="Advertisement">
+  <br>
+  <br>
+<br>
+<br>
+<hr>
+  <br>
+  <label for="browser"><h2>Select Browser Used</h2></label>
+
+  <select class="select-browser" name="browser">
+    <option value="chrome">Chrome</option>
+    <option value="firefox">Firefox</option>
+    <option value="safari">Safari</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <button style="color: black">SUBMIT PROFILE</button>
+</form>
+</body>
+</html>
