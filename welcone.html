@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <style>
-        .image-section {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        img {
-            height: 30%;
-            width: 45%;
-            justify-content: space-around;
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 <header id="top">
-  <h1>Welcome to Veridian Dynamics!</h1>
-  <p>At Veridian Dynamics, <span style="font-weight: bold">We</span> solve <span style="font-style: italic">your</span> problem with <span style="font-weight: bold; font-style: italic">technology.</span></p>
+  <h1 class="fancy-header">Welcome to Veridian Dynamics!</h1>
+  <p class="header-p">At Veridian Dynamics, <span style="font-weight: bold">We</span> solve <span style="font-style: italic">your</span> problem with <span style="font-weight: bold; font-style: italic">technology.</span></p>
+    <br>
 </header>
 <hr>
-<section>
-   <h2>Core Values</h2>
+<section class="ul-section">
+    <h2>Core Values</h2>
     <ul>
         <li>Competence</li>
         <li>Involvement</li>
@@ -43,42 +34,43 @@
         <li>Increase Success by 20%</li>
         <li>Increase Business by 30%</li>
     </ul>
+    <img class="alien-gif" alt="alien-gif" src="https://media.tenor.com/Mj4XjzcdMZgAAAAC/mars-attack-film.gif">
 </section>
 <hr>
-<h2>Company Vision</h2>
-
-<section class="image-section">
-    <img src="https://picsum.photos/200/300" alt="random image">
-    <img src="https://picsum.photos/200/300" alt="random image">
-    <img src="https://picsum.photos/200/300" alt="random image">
-    <img src="https://picsum.photos/200/300" alt="random image">
-</section>
+<div class="image-section">
+    <img class="section-image" src="https://picsum.photos/200/300" alt="random image">
+    <img class="section-image" src="https://picsum.photos/200/300" alt="random image">
+    <img class="section-image" src="https://picsum.photos/200/300" alt="random image">
+    <img class="section-image" src="https://picsum.photos/200/300" alt="random image">
+</div>
 <footer>
-    <h2>Our Product</h2>
-    <table>
-        <tr>
-            <th>Plan</th>
-            <th>Price</th>
-            <th>Features</th>
-        </tr>
-        <tr>
-            <td>Starter</td>
-            <td>$99</td>
-            <td>Base Technology</td>
-        </tr>
-        <tr>
-            <td>Advanced</td>
-            <td>$199</td>
-            <td>Additional Features</td>
-        </tr>
-        <tr>
-            <td>Premium</td>
-            <td>$499</td>
-            <td>Unlimited Support</td>
-        </tr>
-    </table>
+    <h2 class="footer-h2">Our Product</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Features</th>
+            </tr>
+            <tr>
+                <td>Starter</td>
+                <td>$99</td>
+                <td>Base Technology</td>
+            </tr>
+            <tr>
+                <td>Advanced</td>
+                <td>$199</td>
+                <td>Additional Features</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>$499</td>
+                <td>Unlimited Support</td>
+            </tr>
+        </table>
+    </div>
     <p style="font-style: italic">All products come with out quality guarantee&trade;.</p>
-    <a href="#top" class="back-to-top" style="font-weight: bold">Back to Top</a>
+    <a href="#top" class="back-to-top">Back to Top</a>
 </footer>
 
 

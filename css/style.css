@@ -1,0 +1,118 @@
+.fancy-header {
+    text-align: center;
+    color: limegreen;
+}
+header {
+    text-decoration: underline lime;
+}
+.header-p {
+    text-align: center;
+}
+body {
+    align-items: center;
+    cursor: url("https://ih1.redbubble.net/image.530118070.9973/st,small,845x845-pad,1000x1000,f8f8f8.u3.jpg"), grabbing;
+    background-color: #000000FF;
+    font-family: 'Space Grotesk', sans-serif;;
+    background-image: url('https://wallpapers.com/images/hd/vertical-monitor-ot4szgzk30c2lbd0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.section-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 140px;
+    padding-bottom: 40px;
+}
+
+p {
+    color:limegreen;
+}
+
+ul {
+    color: limegreen;
+}
+
+h2 {
+    color: limegreen;
+    max-width: 40%;
+    padding-bottom: 40px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    color: limegreen;
+    width: 800px;
+    text-align: center;
+}
+th {
+    padding: 10px;
+}
+
+tr {
+    border: 1px dashed limegreen;
+}
+
+td {
+    border: 1px dotted limegreen;
+    padding: 20px;
+}
+
+.ul-section {
+    overflow: hidden;
+}
+.ul-section h2 {
+    padding-left: 50px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    max-width: 40%;
+}
+
+li {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/027/873/439/original/marco-vergantini-ezgif-6-98de048be1x.gif?1592826173");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.alien-gif {
+    display: flex;
+    float: right; /* Float the image to the right */
+    margin-top: -600px;
+    margin-left: 100px; /* Adjust the margin to create space between
+    lists and image */
+    margin-right: 300px;
+    width: 600px; /* Adjust the width as needed */
+    height: 400px; /* Maintain the aspect ratio */
+    opacity: 80%;
+}
+
+
+
+a.back-to-top:hover {
+    cursor: grab;
+}
