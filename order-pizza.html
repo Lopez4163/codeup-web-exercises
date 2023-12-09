@@ -10,6 +10,12 @@
       height: 300px;
       width: 90%;
     }
+    #table-step {
+      color: white;
+    }
+    label {
+      text-align: left;
+    }
   </style>
 
 </head>
@@ -22,7 +28,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Order Online</a>
         </li>
@@ -44,7 +50,11 @@
     <h2>Pizza World</h2>
   </div>
 </header>
-<section class="container ">
+<br>
+<section class="container">
+  <div>
+    <h1>Build Your Own Pizza!</h1>
+  </div>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
@@ -53,7 +63,6 @@
         </svg>
          Size and Crust
       </button>
-
     </li>
     <li class="nav-item" role="presentation">
       <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
@@ -68,21 +77,123 @@
           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"/>
         </svg>Toppings</button>
     </li>
-
   </ul>
-  <div class="tab-content" id="myTabContent">
+  <div class="tab-content border" id="myTabContent">
+    <div class="border bg-primary p-1 px-2" id="table-step">Choose Size And Cut</div>
     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-      <div class="d-flex header w-80 bg-primary text-white pt-2 px-2 align-items-center  ">
-        <h6>Choose Size and Crust</h6>
+
+      <br>
+      <div>
+        <ul class="list-group p-3">
+        <li class="list-group-item bg-secondary text-white">Hot Tossed</li>
+        <li class="list-group-item">Garlic seasoned crust with a rich buttery taste</li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+            <label class="form-check-label" for="firstRadio">Small (10")</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+            <label class="form-check-label" for="firstRadio">Medium (12")</label>
+          </li>
+      </ul>
+        <ul class="list-group p-3 text-ali">
+          <li class="list-group-item bg-secondary text-white">Crispy Thin</li>
+          <li class="list-group-item">Thin enough for optimum crispy to crunch ratio</li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+            <label class="form-check-label" for="firstRadio">Medium(12")</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+            <label class="form-check-label" for="firstRadio">Large(14")</label>
+          </li>
+        </ul>
       </div>
-
-
+      <div class="border bg-secondary p-2 d-flex justify-content-end  ">
+        <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+          Custom button
+        </button>
+      </div>
     </div>
-    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">.efwfrwefwfwe</div>
-    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
-  </div>
-
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div>
+        <ul class="list-group p-3 text-ali">
+          <li class="list-group-item bg-secondary text-white">Cheese</li>
+          <li class="list-group-item">How Much?</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open Normal</option>
+            <option value="1">More then Normal</option>
+            <option value="2">A lot</option>
+            <option value="3">Too Much</option>
+          </select>
+        </ul>
+        <ul class="list-group p-3 text-ali">
+          <li class="list-group-item bg-secondary text-white">Cheese</li>
+          <li class="list-group-item">Sauce</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Tomato</option>
+            <option value="1">More then Normal</option>
+            <option value="2">A lot</option>
+            <option value="3">Too Much</option>
+          </select>
+          <li class="list-group-item">How Much?</li>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Normal</option>
+            <option value="1">More then Normal</option>
+            <option value="2">A lot</option>
+            <option value="3">Too Much</option>
+          </select>
+        </ul>
+        <div class="border bg-secondary p-2 d-flex justify-content-end  ">
+          <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+            Custom button
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+      <ul class="list-group p-3 text-ali">
+        <li class="list-group-item bg-secondary text-white">Choose Meats</li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+          <label class="form-check-label stretched-link" for="firstCheckboxStretched">Beef</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+          <label class="form-check-label stretched-link" for="firstCheckboxStretched">Ham</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+          <label class="form-check-label stretched-link" for="secondCheckboxStretched">Philly Steak</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+          <label class="form-check-label stretched-link" for="secondCheckboxStretched">Bacon</label>
+        </li>
+      </ul>
+      <ul class="list-group p-3 text-ali">
+        <li class="list-group-item bg-secondary text-white">Choose Non-Meats</li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+          <label class="form-check-label stretched-link" for="firstCheckboxStretched">Green Peppers</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+          <label class="form-check-label stretched-link" for="firstCheckboxStretched">Mushrooms</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+          <label class="form-check-label stretched-link" for="secondCheckboxStretched">Onionsk</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+          <label class="form-check-label stretched-link" for="secondCheckboxStretched">Jalapeno Peppers</label>
+        </li>
+      </ul>
+    </div>
 </section>
 
 
