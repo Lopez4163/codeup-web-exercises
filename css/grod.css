@@ -1,0 +1,304 @@
+/*probably not needed*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E6E6E6;
+    font-family: 'Abel', sans-serif;
+}
+.main-header {
+    font-family: 'Anton', sans-serif;
+    padding-bottom: 20px;
+}
+.location-header {
+    font-family: 'Anton', sans-serif;
+}
+hr {
+    border-top: grey solid 2px;
+}
+.header-item-selected-work h3 {
+    font-size: 16px;
+}
+.header-item-the-last h3 {
+    font-size: 16px;
+}
+.row-images img{
+    height: calc(100% - 20px);
+    width: 100%;
+    padding: 0;
+    border: 5px solid lightgray;
+}
+.caption-text {
+    margin: 1px;
+}
+.card {
+    border: none;
+    background-color: #E6E6E6;
+}
+.card-body {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.design-icon {
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: #E6563B;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    width: 75px;
+    height: 75px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.develop-icon {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 75px;
+    height: 75px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #EB903A;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+}
+.support-icon {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 75px;
+    height: 75px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    background-color: #7CB06C;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+}
+.host-icon {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 75px;
+    height: 75px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #00ABA9;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+}
+.letter-icon-design {
+    border-radius: 50%;
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #E6563B;
+    font-family: 'Anton', sans-serif;
+}
+.letter-icon-develop {
+    border-radius: 50%;
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #EB903A;
+    font-family: 'Anton', sans-serif;
+}
+.letter-icon-support {
+    border-radius: 50%;
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #7CB06C;
+    font-family: 'Anton', sans-serif;
+}
+.letter-icon-host {
+    border-radius: 50%;
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #00ABA9;
+    font-family: 'Anton', sans-serif;
+}
+.news-text {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Anton', sans-serif;
+}
+hr {
+    visibility: hidden;
+}
+/*This Media is for X-Large screen size*/
+@media screen and (min-width: 1200px) {
+    hr {
+        visibility: visible;
+    }
+    .article {
+        margin-bottom: 45px;
+    }
+    .news-text {
+        margin-left: 20px;
+    }
+    .header-item-selected-work {
+        margin-top: 18px;
+    }
+    .header-item-the-last {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+}
+/*This Media is for Large Screens*/
+@media screen and (max-width: 1199px) and (min-width: 991px) {
+    hr {
+        visibility: visible;
+    }
+    .project-image {
+        margin-top: 90px;
+    }
+    .article {
+        margin-bottom: 80px;
+    }
+    .news-text {
+        margin-left: 20px;
+    }
+    .header-item-selected-work {
+        margin-top: 18px;
+    }
+    .header-item-the-last {
+        margin-top: 18px;
+    }
+    .news-section {
+        margin-top: 30px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .card-body {
+        padding-bottom: 90px;
+    }
+    .tweet-text {
+        font-weight: bolder;
+        padding-bottom: 0;
+    }
+}
+/*Using media to hide hr on small screens as well as medium screens*/
+@media screen and (max-width: 991px ) {
+    .header-item-the-last {
+        display: none;
+    }
+    .header-icons {
+        display: inline-grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 100px 100px;
+        grid-gap: 3px;
+    }
+    .news-section {
+        display: none;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+    .header-item-selected-work {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .letter-icon-design {
+        border-radius: 50%;
+        padding: 4px 8px;
+        margin-left: 1px;
+        margin-right: 0;
+        background-color: #E6563B;
+    }
+    .letter-icon-develop {
+        border-radius: 50%;
+        padding: 4px 8px;
+        margin-left: 1px;
+        margin-right: 0;
+        background-color: #EB903A;
+    }
+    .letter-icon-support {
+        border-radius: 50%;
+        padding: 4px 8px;
+        margin-left: 1px;
+        margin-right: 0;
+        background-color: #7CB06C;
+    }
+    .letter-icon-host {
+        border-radius: 50%;
+        padding: 4px 8px;
+        margin-left: 1px;
+        margin-right: 0;
+        background-color: #00ABA9;
+    }
+    .codeup-design {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px){
+    hr {
+        visibility: visible;
+    }
+    .header-icons {
+        display: inline-grid;
+        grid-template-rows: 100px ;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-gap: 3px;
+        padding-bottom: 35px;
+    }
+}
+/*This is for X-Small & Small Screens*/
+@media screen and(min-width: 200px) and(max-width: 767px) {
+    hr {
+        visibility: hidden;
+    }
+    .header-icons {
+        display: inline-grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 100px 100px;
+        grid-gap: 3px;
+        padding-bottom: 35px;
+    }
+    .card-text {
+        font-size: 16px;
+    }
+    .letter-icon-support {
+        padding: 4px 8px;
+    }
+    .letter-icon-host {
+        padding: 4px 8px;
+    }
+    .letter-icon-develop {
+        padding: 4px 8px;
+    }
+    .letter-icon-design {
+        padding: 4px 8px;
+    }
+    .design-icon {
+        width: 75px;
+    }
+    .develop-icon {
+        width: 75px;
+    }
+    .support-icon {
+        width: 75px;
+    }
+    .host-icon {
+        width: 75px;
+    }
+}
