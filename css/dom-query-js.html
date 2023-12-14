@@ -44,14 +44,19 @@
         const listItems = document.getElementsByTagName('li')  ;
 
         // TODO: Set text color on every other list item to grey
-        const setGreyLi = document.li.style.color = "grey";
+        for (let i = 0; i < listItems.length; i++) {
+            if (i % 2 === 0) {
+                listItems[i].style.color = "grey";
+            }
+        }
         // TODO: Set text color of li with dbid = 1 to blue
-        const setBlueLi = document.li.style.color = "blue";
+        const setBlueLi = document.querySelector('li[data-dbid="1"]');
+        setBlueLi.style.color = "blue";
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        const subParagraphs = document.getElementsByClassName('sub-paragraph');
+        const subParagraphs = document.getElementsByClassName('.sub-paragraph');
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        const setMission = document.subParagraphs.innerHTML = "Mission Accomplished!";
+        subParagraphs[0].innerText = "Mission Accomplished!";
 
 </script>
 </body>
