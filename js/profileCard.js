@@ -35,3 +35,11 @@ window.onload = () => {
     setTimeout(profileDescChange, 6000)
     setTimeout(bgChange, 4000)
 }
+
+
+
+// GLOBAL
+
+// EVENTS
+
+// ON LOAD
